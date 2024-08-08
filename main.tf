@@ -70,9 +70,8 @@ resource "aws_db_instance" "my_rds_instance" {
   password             = "vaseem12345"
   skip_final_snapshot  = true
   publicly_accessible  = true
-
-  # Other configuration options (e.g., VPC, security groups, etc.)   
-} {# upto this run the visual code one time after that run with the below code }
+}
+  
 resource "aws_instance" "name" {
   ami = "ami-04a81a99f5ec58529"
   instance_type = "t2.medium"
