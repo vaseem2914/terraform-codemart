@@ -98,9 +98,7 @@ resource "aws_instance" "name" {
          "mvn clean package -DskipTests",
          "java -jar target/MyMart-0.0.1-SNAPSHOT.jar" 
 
-        ] 
-        on_failure = continue   
-
+        ]   
         connection {
          type     = "ssh"
          user     = "ubuntu"  
